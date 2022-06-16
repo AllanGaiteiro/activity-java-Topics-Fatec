@@ -1,7 +1,8 @@
-package models;
+package services;
+
 import java.util.Scanner;
 
-public class Scan {
+public class ScanService {
     public static Integer requestInteger() {
         Scanner scan = new Scanner(System.in);
         Integer num = scan.nextInt();
@@ -9,7 +10,7 @@ public class Scan {
         return num;
     }
 
-    private static Double requestDouble() {
+    public static Double requestDouble() {
         Scanner scan = new Scanner(System.in);
         Double num = scan.nextDouble();
         scan.close();
